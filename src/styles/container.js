@@ -34,4 +34,9 @@ export const Container = styled.div`
   .right {
     width: 100%;
   }
+
+  @media (max-width: 990px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;

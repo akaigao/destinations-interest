@@ -4,6 +4,7 @@ import { getCities, getCountries } from "./api/UserAPI.js";
 import { BoxForm } from "./components/BoxForm/index.jsx";
 import { Input } from "./components/Input/index.jsx";
 import { SelectInput } from "./components/SelectInput/index.jsx";
+import { getErros } from "./scripts/validations.jsx";
 import { Container } from "./styles/container.js";
 
 export function App() {
@@ -39,9 +40,14 @@ export function App() {
         </h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <BoxForm>
-            <Input data={register} label="Nome completo" type="text" />
+            <Input data={register} label="Nome e Sobrenome" type="text" />
             <Input data={register} label="Email" type="email" />
-            <Input data={register} label="Phone / Whatsapp" type="number" />
+            <Input
+              data={register}
+              label="Phone / Whatsapp"
+              placeholder="(xx) xxxxx-xxxx"
+              type="tel"
+            />
             <Input data={register} label="CPF" type="cpf" />
             <div className="boxSelect">
               <Controller
@@ -69,23 +75,12 @@ export function App() {
                 )}
               />
             </div>
-            {Object.values(errors).length > 0 ? (
-              <span className="error--message">
-                Todos os campos acima são obrigatórios.
-              </span>
-            ) : (
-              ""
-            )}
-            {console.log(Object.values(errors))};
-            {/* {Object.values(errors).map((item) => {
-              return item.type === "maxLength" ? (
-                <span className="error--message">
-                  CPF não pode exceder mais de 11 números.
-                </span>
-              ) : (
-                ""
-              );
-            })} */}
+            <div className="error--message">
+              {getErros.length(errors)}
+              {getErros.tel(errors)}
+              {getErros.cpf(errors)}
+            </div>
+
             <button>Enviar</button>
           </BoxForm>
         </form>

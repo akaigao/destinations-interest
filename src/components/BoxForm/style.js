@@ -26,6 +26,13 @@ export const ContainerForm = styled.div`
     border-radius: 5px;
 
     cursor: pointer;
+    transition: 100ms;
+  }
+
+  button:hover {
+    background-color: #ffa800;
+    color: #fff;
+    transition: 100ms;
   }
 
   .contact {
@@ -39,6 +46,12 @@ export const ContainerForm = styled.div`
   }
 
   .error--message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2.5px;
     color: red;
   }
 `;
