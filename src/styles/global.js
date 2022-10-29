@@ -9,12 +9,15 @@ export default createGlobalStyle`
     }
 
     body {
-        max-width: 1440px;
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     #root {
         max-width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;

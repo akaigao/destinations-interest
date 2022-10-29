@@ -38,5 +38,6 @@ export const Container = styled.div`
   @media (max-width: 990px) {
     display: flex;
     flex-direction: column;
+    padding: 50px 0px;
   }
 `;
