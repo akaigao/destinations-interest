@@ -1,0 +1,42 @@
+import styled from "styled-components";
+
+export const ContainerInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  color: #9e9e9e;
+
+  input {
+    all: unset;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: none;
+    color: #000;
+    border-bottom: 1px solid #9e9e9e;
+    text-align: start;
+    cursor: text;
+    transition: 1ms;
+  }
+
+  input:focus {
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+    transition: 1ms;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+    position: relative;
+    bottom: 0;
+  }
+
+  label {
+    position: absolute;
+    top: -6px;
+    font-size: 10px;
+  }
+`;
