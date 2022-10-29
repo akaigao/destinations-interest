@@ -49,6 +49,7 @@ export function App() {
               type="tel"
             />
             <Input data={register} label="CPF" type="cpf" />
+
             <div className="boxSelect">
               <Controller
                 control={control}
@@ -75,6 +76,7 @@ export function App() {
                 )}
               />
             </div>
+
             <div className="error--message">
               {getErros.length(errors)}
               {getErros.tel(errors)}
