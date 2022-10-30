@@ -1,25 +1,13 @@
 import styled from "styled-components";
 
-export const ContainerForm = styled.div`
+export const Box = styled.div`
   width: 100%;
-  padding: 20px 0;
-  gap: 30px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-
-  .boxSelect {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
 
   button {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffa800;
+    background-color: #fff;
     font-weight: 700;
     padding: 10px 18px;
     border: 2px solid #ffa800;
@@ -35,14 +23,12 @@ export const ContainerForm = styled.div`
     transition: 100ms;
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 400;
-    color: #737373;
+  button:disabled,
+  button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
   }
 
   .error--message {
@@ -50,7 +36,7 @@ export const ContainerForm = styled.div`
     flex-direction: column;
     gap: 10px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 8px;
     letter-spacing: 2.5px;
     color: red;
   }

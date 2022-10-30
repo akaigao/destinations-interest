@@ -9,7 +9,7 @@ export const getErros = {
   tel: function (e) {
     return Object.keys(e).map((item) => {
       return item === "Phone / Whatsapp" ? (
-        <span key={2}>Digite o número de telefone conforme o exemplo.</span>
+        <span key={2}>Número inválido.</span>
       ) : (
         ""
       );
@@ -19,7 +19,7 @@ export const getErros = {
     return Object.keys(e).map((item) => {
       return item === "CPF" ? (
         <span key={4} className="error--message">
-          O CPF deve conter e não pode exceder mais de 11 números.
+          O CPF deve conter 11 e somente números.
         </span>
       ) : (
         ""

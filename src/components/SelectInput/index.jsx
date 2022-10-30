@@ -17,8 +17,8 @@ export function SelectInput({ data, op, placeholder }) {
     <Select
       isMulti
       styles={customStyles}
-      options={options}
       onChange={(val) => data.onChange(val)}
+      options={options}
       placeholder={placeholder}
     />
   );
