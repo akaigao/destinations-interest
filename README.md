@@ -1,23 +1,21 @@
-# Destinos de Interesse
+# Destinos de Interesse 🗺️
 
 ##### DESAFIO PARTE 2
 
 Criar uma interface web para marcar Destinos de Interesse.
 
+Fiz deploy da aplicação e pode ser verificada através desse [link](https://gleaming-bubblegum-e1a720.netlify.app/), que está hospeadado na Netlify.
+
+Algumas das principais ferramentas utilizadas foram:
+
+- ReactJS
+- Ract Form
+- React Select
+- styled-components
+
 ---
 
-![](https://imgur.com/E2bSUoV.png)
-
-O formulário deverá conter os seguintes campos:
-
-1. Nome
-2. Email
-3. Telefone
-4. CPF
-5. País
-6. Cidade
-
-![](https://imgur.com/2TnQMco.png)
+![](https://imgur.com/kfadKOR.gif)
 
 ---
 
@@ -26,9 +24,11 @@ O formulário deverá conter os seguintes campos:
 - Todos os campos deversão ser obrigatório.
 - Validações opcionais:
   - Phone / Whatsapp: deverá aceitar apenas números, com exceção dos caracteres ( ) e -
-  - CPF: deverá ter apenas 11 números e conter somente números
+  - CPF: deverá ter e conter apenas 11 números
 
-![](https://imgur.com/v0ymmpz.png)
+* \*Todas as validações foram feitas com regex\*\*
+
+![](https://imgur.com/f2fVpXy.png)
 
 ---
 
