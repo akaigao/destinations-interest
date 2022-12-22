@@ -20,7 +20,6 @@ export const Box = styled.section`
   h2 {
     font-weight: 400;
     color: #737373;
-    margin-bottom: 20px;
   }
 
   hr {
