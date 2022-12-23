@@ -1,17 +1,17 @@
 # Destinos de Interesse 🗺️
 
-##### DESAFIO PARTE 2
-
 Criar uma interface web para marcar Destinos de Interesse.
 
-Fiz deploy da aplicação e pode ser verificada através desse [link](https://gleaming-bubblegum-e1a720.netlify.app/), que está hospeadado na Netlify.
+Fiz deploy da aplicação e pode ser verificada através desse [link](https://destinations-interest.vercel.app/), que está hospeadado na Vercel.
 
 Algumas das principais ferramentas utilizadas foram:
 
 - ReactJS
-- Ract Form
-- React Select
+- Context API e Hooks
+- React Hook Form
 - styled-components
+- MUI Design System
+- ESLint
 
 ---
 
@@ -21,12 +21,9 @@ Algumas das principais ferramentas utilizadas foram:
 
 ## Validações e obrigatoriedade
 
-- Todos os campos deversão ser obrigatório.
-- Validações opcionais:
-  - Phone / Whatsapp: deverá aceitar apenas números, com exceção dos caracteres ( ) e -
-  - CPF: deverá ter e conter apenas 11 números
-
-* \*Todas as validações foram feitas com regex\*\*
+- Todos os campos são obrigatórios.
+  - Phone / Whatsapp: somente números (e mascára).
+  - CPF: somente números (e mascára).
 
 ![](https://imgur.com/f2fVpXy.png)
 
@@ -40,7 +37,6 @@ Algumas das principais ferramentas utilizadas foram:
 
 ## Inspirações
 
-![](https://imgur.com/jmhz6WY.png)
 ![](https://imgur.com/YRMbp8k.png)
 
 ---
