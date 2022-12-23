@@ -15,7 +15,7 @@ Algumas das principais ferramentas utilizadas foram:
 
 ---
 
-![](https://imgur.com/kfadKOR.gif)
+![](https://imgur.com/EGgynOb.gif)
 
 ---
 
@@ -25,13 +25,13 @@ Algumas das principais ferramentas utilizadas foram:
   - Phone / Whatsapp: somente números (e mascára).
   - CPF: somente números (e mascára).
 
-![](https://imgur.com/f2fVpXy.png)
+![](https://imgur.com/lLgDXgl.png)
 
 ---
 
 ## Responsividade
 
-![](https://imgur.com/K32gta1.png)
+![](https://imgur.com/IPeDLea.jpg)
 
 ---
 
